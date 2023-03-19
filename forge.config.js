@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'mawersoft',
+          name: 'signd-client'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };

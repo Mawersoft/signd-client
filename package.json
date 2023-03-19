@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Signd Client",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mawersoft/signd-client.git"
+  },
   "scripts": {
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "keywords": [],
   "author": "Jack Mawer",
@@ -18,6 +23,7 @@
     "@electron-forge/maker-rpm": "^6.0.5",
     "@electron-forge/maker-squirrel": "^6.0.5",
     "@electron-forge/maker-zip": "^6.0.5",
+    "@electron-forge/publisher-github": "^6.0.5",
     "electron": "^23.1.4"
   },
   "dependencies": {
